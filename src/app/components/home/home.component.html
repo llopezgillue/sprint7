@@ -1,0 +1,42 @@
+
+<div class="container">
+
+  <br>
+  <p>¿Qué vols fer?</p>
+  <br>
+
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="webCheck" [(ngModel)]="optionList.firstOption"
+            (change)="Web()">
+        <label class="form-check-label" for="webCheck">
+            Una página web (500€)
+        </label>
+        <app-panel *ngIf="optionList.firstOption" (costUpdated)="changeTotalPrice($event)"></app-panel>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="seoCheck" [(ngModel)]="optionList.secondOption"
+            (change)="seo()">
+        <label class="form-check-label" for="seoCheck">
+            Fer una campanya SEO (300 €)
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="adCheck" [(ngModel)]="optionList.thirdOption"
+            (change)="ad()">
+        <label class="form-check-label" for="adCheck">
+          Una campanya de Google Ads (200 €)
+        </label>
+    </div>
+
+    <div class="text-center">
+        <p>El preu total: <strong>{{optionList.totalPrice}}€</strong></p>
+    </div>
+ <footer>
+        <button class="back-button" (click)="goMain()">Tornar enrere</button>
+    </footer>
+
+</div>
+

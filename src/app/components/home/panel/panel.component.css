@@ -1,0 +1,48 @@
+
+.container {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-control {
+    box-shadow: none;
+    border: 4px solid #ccc;
+}
+
+.btn-warning {
+    background-color: #6c36f4;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #9035e5;
+}
+
+
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .input p {
+    margin: 0;
+  }
+
+  input[type="number"] {
+    width: 30px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  strong {
+    color: #ec101f;
+    font-size: 30px;
+  }
