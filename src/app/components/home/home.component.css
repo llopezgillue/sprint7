@@ -34,8 +34,7 @@ h1 {
     border: 2px solid #ffffff;
     color: #ffffff;
     padding: 10px 25px;
-    border-radius: 50px;
-    cursor: pointer;
+    border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s;
     text-transform: uppercase;
@@ -63,9 +62,7 @@ body {
     margin: 40px 0;
     padding: 25px 35px;
     border: none;
-    border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.4s ease-in-out;
 }
 
@@ -115,8 +112,4 @@ body {
     letter-spacing: 1.5px;
 }
 
-
-*, *::before, *::after {
-    transition: all 0.6s ease-in-out;
-}
 
